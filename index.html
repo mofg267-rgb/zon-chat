@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zon Chat - تسجيل الدخول</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body style="background: linear-gradient(180deg,#edf2ff 0%, #f1f4f9 100%);">
+
+<div class="login-container" role="main">
+    <h2>Zon Chat</h2>
+
+    <input type="email" id="email" placeholder="البريد الإلكتروني" autocomplete="username">
+    <input type="password" id="password" placeholder="كلمة السر" autocomplete="current-password">
+
+    <div class="login-actions">
+        <button class="small-btn" id="btnRegister">إنشاء حساب</button>
+        <button class="small-btn" id="btnLogin">تسجيل دخول</button>
+    </div>
+
+    <p id="status" style="margin-top:12px;color:#1e3a8a;"></p>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+<script src="app.js"></script>
+<script>
+    document.getElementById("btnRegister").addEventListener("click", register);
+    document.getElementById("btnLogin").addEventListener("click", login);
+</script>
+</body>
+</html>

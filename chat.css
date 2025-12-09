@@ -1,0 +1,193 @@
+/* ================================
+   إعدادات أساسية
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    background: #f1f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ================================
+   الحاوية الرئيسية للدردشة
+================================ */
+.chat-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================
+   نافذة الشات
+================================ */
+.chat-window {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background: #f9fafb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(16,24,40,0.1);
+}
+
+/* شريط الرأس */
+.chat-header {
+    padding: 15px;
+    background: #e0e7ff;
+    border-bottom: 1px solid #c7d2fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h2 {
+    margin: 0;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-logout {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* صندوق الرسائل */
+.messages-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* رسالة صادرة */
+.message-out {
+    align-self: flex-end;
+    background: #2563eb;
+    color: white;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 12px 12px 0 12px;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+/* رسالة واردة */
+.message-in {
+    align-self: flex-start;
+    background: #e5e7eb;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 12px 12px 12px 0;
+    max-width: 70%;
+    color: #111827;
+    word-break: break-word;
+}
+
+.msg-time {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 6px;
+    text-align: right;
+}
+
+/* إدخال الرسائل */
+.input-area {
+    padding: 10px;
+    display: flex;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+}
+
+#sendBtn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    opacity: 0.9;
+}
+
+/* صفحة تسجيل الدخول */
+.login-container {
+    width: 360px;
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(16,24,40,0.08);
+    text-align: center;
+    border: 1px solid rgba(30,58,138,0.06);
+}
+
+.login-container h2 {
+    color: #1e3a8a;
+    margin-bottom: 18px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #1e3a8a;
+    color: white;
+    font-weight: 600;
+}
+
+.login-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.small-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1e3a8a;
+    background: white;
+    color: #1e3a8a;
+    cursor: pointer;
+}
